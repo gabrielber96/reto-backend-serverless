@@ -17,6 +17,10 @@
   ```bash
   sls offline
   ```
+  #### Deploy AWS
+  ```bash
+  sls deploy
+  ```
      
   
  
