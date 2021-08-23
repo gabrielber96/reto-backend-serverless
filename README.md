@@ -14,6 +14,7 @@
  
  ### Uso
   #### modo local
-  ```sls offline
+  ```python
+     import foobar
   
  
