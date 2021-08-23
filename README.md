@@ -12,3 +12,8 @@
  - express-validator
  - serverless-offline (DEV)
  
+ ### Uso
+  #### modo local
+  ```sls offline
+  
+ 
