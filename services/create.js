@@ -16,7 +16,7 @@ const createUser = async (obj) => {
   const color_piel = obj.skin_color || obj.color_piel;
   const color_ojo = obj.eye_color || obj.color_ojo;
   const ano_nacimiento = obj.birth_year || obj.ano_nacimiento;
-  const genero = obj.gender || obj.gender;
+  const genero = obj.gender || obj.genero;
   const mundo_natal = obj.homeworld || obj.mundo_natal;
   const creado = obj.created || obj.creado;
   const editado = obj.edited || obj.editado;

@@ -14,11 +14,16 @@ const getUser = async ({ id }) => {
 //* Films
 const getFilms = async ({ userId }) => {
   try {
-    return await films.findAll({
+    let list = await films.findAll({
       where: {
         usuarioId: userId,
       },
+      attributes: ["pelicula"],
     });
+    list = list.map(({ pelicula }) => {
+      return pelicula;
+    });
+    return list;
   } catch (err) {
     throw err;
   }
@@ -26,11 +31,16 @@ const getFilms = async ({ userId }) => {
 //* Species
 const getSpecies = async ({ userId }) => {
   try {
-    return await species.findAll({
+    let list = await species.findAll({
       where: {
         usuarioId: userId,
       },
+      attributes: ["especie"],
     });
+    list = list.map(({ especie }) => {
+      return especie;
+    });
+    return list;
   } catch (err) {
     throw err;
   }
@@ -38,11 +48,16 @@ const getSpecies = async ({ userId }) => {
 //* Starship
 const getStarship = async ({ userId }) => {
   try {
-    return await starship.findAll({
+    let list = await starship.findAll({
       where: {
         usuarioId: userId,
       },
+      attributes: ["nave_estelar"],
     });
+    list = list.map(({ nave_estelar }) => {
+      return nave_estelar;
+    });
+    return list;
   } catch (err) {
     throw err;
   }
@@ -50,11 +65,16 @@ const getStarship = async ({ userId }) => {
 //* Vehicles
 const getVehicles = async ({ userId }) => {
   try {
-    return await vehicles.findAll({
+    let list = await vehicles.findAll({
       where: {
         usuarioId: userId,
       },
+      attributes: ["vehiculo"],
     });
+    list = list.map(({ vehiculo }) => {
+      return vehiculo;
+    });
+    return list;
   } catch (err) {
     throw err;
   }
