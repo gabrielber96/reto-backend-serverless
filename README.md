@@ -10,4 +10,5 @@
  - sequelize
  - mysql2
  - express-validator
+ - serverless-offline (DEV)
  
