@@ -14,7 +14,7 @@
  
  ### Uso
   #### modo local
-  ```python
-     import foobar
+  ```sls outline
+     
   
  
