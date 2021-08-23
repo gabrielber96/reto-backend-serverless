@@ -14,8 +14,9 @@
  
  ### Uso
   #### modo local
+  ```bash
+  sls offline
   ```
-  import foobar
      
   
  
